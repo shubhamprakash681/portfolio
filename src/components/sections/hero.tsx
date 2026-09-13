@@ -91,11 +91,39 @@ export function Hero() {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="relative flex items-center justify-center"
             >
-              {/* Subtle outer glow */}
-              <div className="absolute -inset-3 rounded-full bg-primary/20 blur-xl pointer-events-none" />
+              {/* Animated Ambient Orange Glow */}
+              {/* 1. Breathing atmospheric aura */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.25, 1],
+                  opacity: [0.35, 0.7, 0.35],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="absolute -inset-8 sm:-inset-12 rounded-full bg-gradient-to-tr from-primary/40 via-orange-500/30 to-amber-500/20 blur-3xl pointer-events-none"
+              />
 
-              {/* Clean gradient ring */}
-              <div className="relative p-1 rounded-full bg-gradient-to-tr from-primary via-orange-400 to-primary shadow-xl">
+              {/* 2. Rotating ambient light sweep */}
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                  scale: [1.05, 0.95, 1.05],
+                }}
+                transition={{
+                  rotate: { duration: 16, repeat: Infinity, ease: "linear" },
+                  scale: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                }}
+                className="absolute -inset-4 sm:-inset-6 rounded-full bg-gradient-to-r from-primary/30 via-transparent to-orange-400/30 blur-2xl pointer-events-none"
+              />
+
+              {/* Animated spinning gradient border ring */}
+              <div className="relative p-[3px] rounded-full overflow-hidden shadow-2xl">
+                <div className="absolute inset-[-50%] bg-[conic-gradient(from_0deg_at_50%_50%,hsl(var(--primary))_0deg,#ea580c_120deg,#fdba74_180deg,#ea580c_240deg,hsl(var(--primary))_360deg)] animate-[spin_5s_linear_infinite]" />
+
+                {/* Inner photo container */}
                 <div className="relative rounded-full overflow-hidden w-[160px] h-[160px] sm:w-[220px] sm:h-[220px] lg:w-[270px] lg:h-[270px] bg-muted border-2 border-background">
                   <Image
                     src="/profile.png"
@@ -111,6 +139,8 @@ export function Hero() {
 
             {/* Architecture pipeline badge below profile */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-mono px-3.5 py-2 rounded-2xl sm:rounded-full bg-card/90 border border-primary/30 shadow-xs max-w-full text-center">
+              <span className="text-primary font-semibold">Spring Boot</span>
+              <span className="text-muted-foreground/60">→</span>
               <span className="text-primary font-semibold">React</span>
               <span className="text-muted-foreground/60">→</span>
               <span className="text-foreground">API Gateway</span>
