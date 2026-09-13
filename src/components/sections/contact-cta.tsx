@@ -53,7 +53,7 @@ export function ContactCTA() {
         </div>
         
         <div className="mt-16 flex justify-center">
-          <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume.pdf">
+          <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume_Latest.pdf">
             View Resume
           </Button>
         </div>

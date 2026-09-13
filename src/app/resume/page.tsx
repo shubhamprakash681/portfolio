@@ -21,7 +21,7 @@ export default function ResumePage() {
       
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 mt-8">
         <SectionHeading title="Resume" align="left" className="mb-0" />
-        <Button variant="primary" size="md" href="/resume/ShubhamPrakash_Resume.pdf" className="w-fit flex items-center gap-2" download>
+        <Button variant="primary" size="md" href="/resume/ShubhamPrakash_Resume_Latest.pdf" className="w-fit flex items-center gap-2" download>
           <Download className="w-4 h-4" /> Download PDF
         </Button>
       </div>

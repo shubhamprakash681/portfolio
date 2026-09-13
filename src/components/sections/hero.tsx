@@ -46,7 +46,7 @@ export function Hero() {
               <Button variant="primary" size="lg" href="/projects" className="w-full sm:w-auto">
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume.pdf" download="ShubhamPrakash_Resume.pdf" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume_Latest.pdf" download="ShubhamPrakash_Resume_Latest.pdf" className="w-full sm:w-auto">
                 Download Resume <Download className="ml-2 h-4 w-4" />
               </Button>
             </div>
