@@ -27,7 +27,7 @@ export function FeaturedProjects() {
                     {project.category}
                   </Badge>
                   <Link href={`/projects/${project.slug}`}>
-                    <h3 className="text-xl font-semibold hover:text-primary transition-colors">
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                       {project.name}
                     </h3>
                   </Link>
@@ -56,7 +56,7 @@ export function FeaturedProjects() {
                       href={project.liveUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center text-sm font-medium"
+                      className="text-muted-foreground hover:text-primary transition-all duration-200 inline-flex items-center text-sm font-medium hover:scale-105"
                       title="Live Site"
                     >
                       <ExternalLink className="w-4 h-4 mr-1" /> Live
@@ -67,7 +67,7 @@ export function FeaturedProjects() {
                       href={project.github} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center text-sm font-medium"
+                      className="text-muted-foreground hover:text-primary transition-all duration-200 inline-flex items-center text-sm font-medium hover:scale-105"
                       title="GitHub Repository"
                     >
                       <Github className="w-4 h-4 mr-1" /> Code
@@ -78,7 +78,7 @@ export function FeaturedProjects() {
                       href={project.swaggerUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center text-sm font-medium"
+                      className="text-muted-foreground hover:text-primary transition-all duration-200 inline-flex items-center text-sm font-medium hover:scale-105"
                       title="Swagger API Documentation"
                     >
                       <ExternalLink className="w-4 h-4 mr-1" /> API
@@ -86,9 +86,9 @@ export function FeaturedProjects() {
                   )}
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="text-primary hover:underline transition-colors inline-flex items-center text-sm font-medium ml-auto"
+                    className="text-primary hover:text-primary/80 transition-colors inline-flex items-center text-sm font-semibold ml-auto group/link"
                   >
-                    Case Study &rarr;
+                    Case Study <span className="inline-block transition-transform duration-200 group-hover/link:translate-x-1 ml-1">&rarr;</span>
                   </Link>
                 </div>
               </Card>

@@ -68,15 +68,15 @@ export function GitHubSection() {
                 rel="noopener noreferrer"
                 className="block h-full outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
               >
-                <Card hover className="p-5 h-full flex flex-col bg-background/50 border-border/60">
+                <Card hover className="p-5 h-full flex flex-col bg-background/50 border-border/60 group">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-2">
-                      <Github className="w-4 h-4 text-muted-foreground" />
-                      <h3 className="font-mono text-sm font-semibold text-primary/90">
+                      <Github className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <h3 className="font-mono text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
                         {repo.name}
                       </h3>
                     </div>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground/50" />
+                    <ExternalLink className="w-4 h-4 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
                   </div>
                   
                   <p className="text-sm text-muted-foreground mb-6 flex-grow">
@@ -85,10 +85,10 @@ export function GitHubSection() {
                   
                   <div className="flex items-center gap-2 mt-auto">
                     <span 
-                      className="w-2.5 h-2.5 rounded-full" 
+                      className="w-2.5 h-2.5 rounded-full transition-transform duration-200 group-hover:scale-125" 
                       style={{ backgroundColor: repo.color }}
                     />
-                    <span className="text-xs text-muted-foreground font-medium">
+                    <span className="text-xs text-muted-foreground font-medium group-hover:text-foreground transition-colors">
                       {repo.language}
                     </span>
                   </div>

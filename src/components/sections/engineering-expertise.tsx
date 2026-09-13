@@ -81,11 +81,11 @@ export function EngineeringExpertise() {
             const Icon = concept.icon
             return (
               <StaggerItem key={index}>
-                <Card className="p-4 h-full flex flex-col items-start border border-border/50 bg-background/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
-                  <div className="p-2 rounded-md bg-primary/10 text-primary mb-3">
+                <Card hover className="p-4 h-full flex flex-col items-start border border-border/50 bg-background/50 backdrop-blur-sm group">
+                  <div className="p-2 rounded-md bg-primary/10 text-primary mb-3 group-hover:bg-primary/20 group-hover:scale-110 group-hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] transition-all duration-300">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-medium text-sm mt-2">{concept.title}</h3>
+                  <h3 className="font-medium text-sm mt-2 group-hover:text-primary transition-colors">{concept.title}</h3>
                   <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
                     {concept.description}
                   </p>

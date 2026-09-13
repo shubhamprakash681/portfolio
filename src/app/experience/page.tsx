@@ -22,14 +22,14 @@ export default function ExperiencePage() {
       <div className="mt-12 relative border-l-2 border-primary/20 pl-6 space-y-12 ml-3">
         {experiences.map((exp, index) => (
           <FadeIn key={`${exp.company}-${index}`} direction="up" delay={index * 0.1}>
-            <div className="relative">
-              <div className="absolute -left-[35px] top-1 h-5 w-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+            <div className="relative group">
+              <div className="absolute -left-[35px] top-1 h-5 w-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_12px_hsl(var(--primary))] group-hover:border-primary">
                 <div className="h-2 w-2 rounded-full bg-primary" />
               </div>
-              <Card className="p-6">
+              <Card hover className="p-6">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-4">
                   <div>
-                    <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
                       {exp.role}
                     </h3>
                     <div className="flex flex-wrap items-center gap-3 mt-2 text-sm text-muted-foreground">

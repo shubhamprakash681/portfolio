@@ -53,31 +53,31 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={0.6} direction="up">
-            <div className="mt-8 flex items-center gap-6 justify-center lg:justify-start">
+            <div className="mt-8 flex items-center gap-4 justify-center lg:justify-start">
               <Link
                 href={siteConfig.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors p-1"
+                className="text-muted-foreground hover:text-primary transition-all duration-200 p-2 rounded-lg hover:bg-primary/10 hover:scale-110 active:scale-95"
                 aria-label="GitHub"
               >
-                <Github className="h-6 w-6" />
+                <Github className="h-5 w-5" />
               </Link>
               <Link
                 href={siteConfig.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors p-1"
+                className="text-muted-foreground hover:text-primary transition-all duration-200 p-2 rounded-lg hover:bg-primary/10 hover:scale-110 active:scale-95"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-5 w-5" />
               </Link>
               <Link
                 href={`mailto:${siteConfig.email}`}
-                className="text-muted-foreground hover:text-primary transition-colors p-1"
+                className="text-muted-foreground hover:text-primary transition-all duration-200 p-2 rounded-lg hover:bg-primary/10 hover:scale-110 active:scale-95"
                 aria-label="Email"
               >
-                <Mail className="h-6 w-6" />
+                <Mail className="h-5 w-5" />
               </Link>
             </div>
           </FadeIn>
@@ -138,7 +138,7 @@ export function Hero() {
             </motion.div>
 
             {/* Architecture pipeline badge below profile */}
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-mono px-3.5 py-2 rounded-2xl sm:rounded-full bg-card/90 border border-primary/30 shadow-xs max-w-full text-center">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-mono px-3.5 py-2 rounded-2xl sm:rounded-full bg-card/90 border border-primary/30 shadow-xs max-w-full text-center hover:border-primary/60 hover:shadow-[0_0_20px_hsl(var(--primary)/0.25)] transition-all duration-300">
               <span className="text-primary font-semibold">Spring Boot</span>
               <span className="text-muted-foreground/60">→</span>
               <span className="text-foreground font-semibold">React</span>

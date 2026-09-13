@@ -21,25 +21,25 @@ export function ExperienceSection() {
           
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <FadeIn key={index} delay={0.1 * index} direction="up" className="relative">
+              <FadeIn key={index} delay={0.1 * index} direction="up" className="relative group">
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8">
                   {/* Date (Left Side) */}
                   <div className="md:w-[25%] flex-shrink-0 md:text-right pt-1">
-                    <span className="text-sm font-medium text-muted-foreground">
+                    <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
                       {exp.startDate} - {exp.endDate}
                     </span>
                   </div>
                   
                   {/* Timeline Dot (hidden on mobile) */}
                   <div className="hidden md:flex absolute left-[25%] top-1.5 transform -translate-x-1/2 items-center justify-center">
-                    <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-background"></div>
+                    <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-background group-hover:scale-125 group-hover:ring-primary/30 group-hover:shadow-[0_0_12px_hsl(var(--primary))] transition-all duration-300"></div>
                   </div>
                   
                   {/* Content Card (Right Side) */}
                   <div className="md:w-[75%]">
-                    <Card className="p-6">
+                    <Card hover className="p-6">
                       <div className="mb-4">
-                        <h3 className="text-lg font-semibold">{exp.company}</h3>
+                        <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{exp.company}</h3>
                         <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-1">
                           <span className="text-primary text-sm font-medium">{exp.role}</span>
                           <span className="hidden sm:inline text-muted-foreground">•</span>

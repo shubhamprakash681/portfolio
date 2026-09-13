@@ -29,7 +29,7 @@ export default function BlogPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post, index) => (
           <FadeIn key={post.slug} direction="up" delay={index * 0.1}>
-            <Link href={`/blog/${post.slug}`}>
+            <Link href={`/blog/${post.slug}`} className="block h-full group">
               <Card hover className="p-6 h-full flex flex-col border-border/50">
                 <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground mb-4">
                   <span className="flex items-center gap-1">
@@ -50,10 +50,15 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {post.tags.map(tag => (
-                    <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
-                  ))}
+                <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                  <div className="flex flex-wrap gap-2">
+                    {post.tags.map(tag => (
+                      <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+                    ))}
+                  </div>
+                  <span className="text-xs font-semibold text-primary inline-flex items-center ml-2 shrink-0">
+                    Read <span className="inline-block transition-transform duration-200 group-hover:translate-x-1 ml-1">&rarr;</span>
+                  </span>
                 </div>
               </Card>
             </Link>
