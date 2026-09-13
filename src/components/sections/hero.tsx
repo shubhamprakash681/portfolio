@@ -141,15 +141,15 @@ export function Hero() {
             <div className="mt-6 flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-mono px-3.5 py-2 rounded-2xl sm:rounded-full bg-card/90 border border-primary/30 shadow-xs max-w-full text-center">
               <span className="text-primary font-semibold">Spring Boot</span>
               <span className="text-muted-foreground/60">→</span>
-              <span className="text-primary font-semibold">React</span>
+              <span className="text-foreground font-semibold">React</span>
               <span className="text-muted-foreground/60">→</span>
-              <span className="text-foreground">API Gateway</span>
+              <span className="text-primary">API Gateway</span>
               <span className="text-muted-foreground/60">→</span>
-              <span className="text-primary">Microservices</span>
+              <span className="text-foreground">Microservices</span>
               <span className="text-muted-foreground/60">→</span>
-              <span className="text-foreground">Kafka/Redis</span>
+              <span className="text-primary">Kafka/Redis</span>
               <span className="text-muted-foreground/60">→</span>
-              <span className="text-primary font-semibold">PostgreSQL</span>
+              <span className="text-foreground font-semibold">PostgreSQL</span>
             </div>
           </FadeIn>
         </div>

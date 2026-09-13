@@ -33,7 +33,7 @@ export function BlogPreview() {
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-3.5 h-3.5 mr-1" />
-                      {post.readTime} min read
+                      {post.readTime}
                     </div>
                   </div>
                   

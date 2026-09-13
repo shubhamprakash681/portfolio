@@ -38,7 +38,7 @@ export default function BlogPage() {
                   </span>
                   <span className="flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" />
-                    {post.readTime} min read
+                    {post.readTime}
                   </span>
                 </div>
                 
