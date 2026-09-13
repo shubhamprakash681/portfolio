@@ -1,6 +1,6 @@
 import type { NavigationItem, SocialLink } from '@/types'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.shubhamprakash681.in'
 
 export const siteConfig = {
   name: 'Shubham Prakash',
