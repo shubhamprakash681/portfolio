@@ -19,17 +19,6 @@ export function ProjectsPageContent() {
   return (
     <div>
       <div className="flex flex-wrap gap-2 mb-8">
-        <button
-          onClick={() => setActiveCategory('all')}
-          className={cn(
-            "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer active:scale-95",
-            activeCategory === 'all' 
-              ? "bg-primary text-primary-foreground shadow-[0_0_15px_hsl(var(--primary)/0.35)] scale-105" 
-              : "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:border-primary/30"
-          )}
-        >
-          All
-        </button>
         {projectCategories.map(category => (
           <button
             key={category.value}

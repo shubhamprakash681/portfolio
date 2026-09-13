@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Github, Linkedin, Mail, ChevronRight } from 'lucide-react'
+import { X, Github, Linkedin, Mail, Phone, ChevronRight } from 'lucide-react'
 import { navigationItems, siteConfig } from '@/data/site'
 import { ThemeToggle } from './theme-toggle'
 import { cn } from '@/lib/utils'
@@ -149,6 +149,13 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     aria-label="Send Email"
                   >
                     <Mail className="h-4 w-4" />
+                  </a>
+                  <a
+                    href={`tel:+91${siteConfig.phone}`}
+                    className="flex items-center justify-center w-8 h-8 rounded-md border border-border bg-background hover:bg-secondary text-muted-foreground hover:text-primary transition-colors"
+                    aria-label="Call Phone"
+                  >
+                    <Phone className="h-4 w-4" />
                   </a>
                 </div>
 

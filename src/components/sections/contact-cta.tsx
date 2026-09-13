@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from 'lucide-react'
+import { Mail, Phone, Linkedin, Github, ArrowRight } from 'lucide-react'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -14,7 +14,7 @@ export function ContactCTA() {
           align="center"
         />
         
-        <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <a href={`mailto:${siteConfig.email || "shubhamprakash681@gmail.com"}`} className="block h-full group outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl">
             <Card hover className="p-8 h-full flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.35)] transition-all duration-300">
@@ -23,6 +23,18 @@ export function ContactCTA() {
               <h3 className="font-medium text-lg mb-2 group-hover:text-primary transition-colors">Email</h3>
               <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                 shubhamprakash681@gmail.com
+              </p>
+            </Card>
+          </a>
+
+          <a href={`tel:+91${siteConfig.phone || "6299783192"}`} className="block h-full group outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl">
+            <Card hover className="p-8 h-full flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.35)] transition-all duration-300">
+                <Phone className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="font-medium text-lg mb-2 group-hover:text-primary transition-colors">Phone</h3>
+              <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                +91 6299783192
               </p>
             </Card>
           </a>
@@ -53,8 +65,8 @@ export function ContactCTA() {
         </div>
         
         <div className="mt-16 flex justify-center">
-          <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume_Latest.pdf">
-            View Resume
+          <Button variant="outline" size="lg" href="/resume">
+            View Resume <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>

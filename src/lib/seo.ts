@@ -62,6 +62,7 @@ export function generatePersonJsonLd() {
     url: siteConfig.url,
     image: `${siteConfig.url}/profile.png`,
     email: `mailto:${siteConfig.email}`,
+    telephone: `+91-${siteConfig.phone}`,
     sameAs: [siteConfig.github, siteConfig.linkedin],
     worksFor: {
       '@type': 'Organization',

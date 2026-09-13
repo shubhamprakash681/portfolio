@@ -5,7 +5,8 @@ import { SectionHeading } from '@/components/ui/section-heading'
 import { FadeIn } from '@/components/animations/fade-in'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Download, Briefcase, Code2, MapPin } from 'lucide-react'
+import { Download, Briefcase, Code2, MapPin, Phone, Mail } from 'lucide-react'
+import { siteConfig } from '@/data/site'
 import Link from 'next/link'
 
 export const metadata = generatePageMetadata({
@@ -30,10 +31,16 @@ export default function ResumePage() {
         <Card className="p-8 md:p-12 border-primary/20 bg-secondary/10">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-foreground mb-4">Shubham Prakash</h2>
-            <div className="flex flex-wrap gap-4 text-muted-foreground mb-8 text-sm">
+            <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8 text-sm">
               <span className="flex items-center gap-1"><Code2 className="w-4 h-4" /> Software Engineer</span>
               <span className="flex items-center gap-1"><Briefcase className="w-4 h-4" /> 3+ Years Experience</span>
               <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Mumbai, India</span>
+              <a href={`tel:+91${siteConfig.phone}`} className="flex items-center gap-1 hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" /> +91 6299783192
+              </a>
+              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-1 hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" /> {siteConfig.email}
+              </a>
             </div>
             
             <p className="text-lg text-foreground/80 mb-12 leading-relaxed">

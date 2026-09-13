@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 import { siteConfig, navigationItems } from '@/data/site'
 
 export function Footer() {
@@ -26,6 +26,9 @@ export function Footer() {
               </a>
               <a href={`mailto:${siteConfig.email}`} className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
                 <Mail className="h-5 w-5" />
+              </a>
+              <a href={`tel:+91${siteConfig.phone}`} className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Phone">
+                <Phone className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -80,6 +83,11 @@ export function Footer() {
               <li>
                 <a href={`mailto:${siteConfig.email}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Email
+                </a>
+              </li>
+              <li>
+                <a href={`tel:+91${siteConfig.phone}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  +91 6299783192
                 </a>
               </li>
               <li>

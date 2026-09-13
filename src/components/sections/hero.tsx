@@ -46,10 +46,20 @@ export function Hero() {
               <Button variant="primary" size="lg" href="/projects" className="w-full sm:w-auto">
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume_Latest.pdf" download="ShubhamPrakash_Resume_Latest.pdf" className="w-full sm:w-auto">
-                Download Resume <Download className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="lg" href="/resume" className="w-full sm:w-auto">
+                View Resume <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
+            <p className="mt-3 text-xs text-muted-foreground text-center lg:text-left">
+              Looking for raw file?{' '}
+              <a
+                href="/resume/ShubhamPrakash_Resume_Latest.pdf"
+                download="ShubhamPrakash_Resume_Latest.pdf"
+                className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+              >
+                Download direct PDF <Download className="w-3 h-3 inline" />
+              </a>
+            </p>
           </FadeIn>
 
           <FadeIn delay={0.6} direction="up">

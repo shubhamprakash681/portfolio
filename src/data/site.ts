@@ -51,7 +51,8 @@ export const navigationItems: NavigationItem[] = [
   { name: 'Projects', href: '/projects' },
   { name: 'Skills', href: '/skills' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Coffee', href: '/coffee' },
+  { name: 'Resume', href: '/resume' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Coffee', href: '/coffee' },
 ]
 

@@ -5,7 +5,7 @@ import { SectionHeading } from '@/components/ui/section-heading'
 import { FadeIn } from '@/components/animations/fade-in'
 import { Card } from '@/components/ui/card'
 import { siteConfig } from '@/data/site'
-import { Mail, Github, Linkedin, MapPin } from 'lucide-react'
+import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react'
 
 export const metadata = generatePageMetadata({
   title: 'Contact',
@@ -30,6 +30,21 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Email</h3>
                 <p className="text-muted-foreground">shubhamprakash681@gmail.com</p>
                 <p className="text-primary text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Send a message &rarr;</p>
+              </div>
+            </Card>
+          </a>
+        </FadeIn>
+
+        <FadeIn direction="up" delay={0.15}>
+          <a href={`tel:+91${siteConfig.phone}`} className="block group">
+            <Card hover className="p-8 flex items-start gap-4 border-border/50">
+              <div className="bg-primary/10 p-4 rounded-full text-primary group-hover:bg-primary/20 group-hover:scale-110 group-hover:shadow-[0_0_15px_hsl(var(--primary)/0.35)] transition-all duration-300">
+                <Phone className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Phone</h3>
+                <p className="text-muted-foreground">+91 6299783192</p>
+                <p className="text-primary text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Call directly &rarr;</p>
               </div>
             </Card>
           </a>
