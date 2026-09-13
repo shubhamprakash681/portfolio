@@ -42,11 +42,11 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={0.5} direction="up" className="w-full">
-            <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="lg" href="/projects">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start w-full sm:w-auto">
+              <Button variant="primary" size="lg" href="/projects" className="w-full sm:w-auto">
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume.pdf" className="download-btn">
+              <Button variant="outline" size="lg" href="/resume/ShubhamPrakash_Resume.pdf" download="ShubhamPrakash_Resume.pdf" className="w-full sm:w-auto">
                 Download Resume <Download className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -55,26 +55,26 @@ export function Hero() {
           <FadeIn delay={0.6} direction="up">
             <div className="mt-8 flex items-center gap-6 justify-center lg:justify-start">
               <Link
-                href={siteConfig.github || "https://github.com/shubhamprakash681"}
+                href={siteConfig.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors p-1"
                 aria-label="GitHub"
               >
                 <Github className="h-6 w-6" />
               </Link>
               <Link
-                href={siteConfig.linkedin || "https://linkedin.com/in/shubhamprakash681"}
+                href={siteConfig.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors p-1"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </Link>
               <Link
-                href={`mailto:${siteConfig.email || "shubhamprakash681@gmail.com"}`}
-                className="text-muted-foreground hover:text-primary transition-colors"
+                href={`mailto:${siteConfig.email}`}
+                className="text-muted-foreground hover:text-primary transition-colors p-1"
                 aria-label="Email"
               >
                 <Mail className="h-6 w-6" />
@@ -86,32 +86,31 @@ export function Hero() {
         <div className="flex flex-col w-full lg:w-[40%] justify-center items-center">
           <FadeIn delay={0.3} direction="up">
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="relative rounded-full p-1"
+              className="relative flex items-center justify-center"
             >
-              {/* Animated gradient border ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-primary to-primary/50 animate-[spin_4s_linear_infinite]" style={{ margin: '-4px' }}></div>
-              <div className="absolute inset-0 rounded-full bg-background" style={{ margin: '-2px' }}></div>
-              
-              {/* Glow effect */}
-              <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl"></div>
-              
-              <div className="relative rounded-full overflow-hidden w-[160px] h-[160px] sm:w-[220px] sm:h-[220px] lg:w-[280px] lg:h-[280px] bg-muted">
-                <Image
-                  src="/profile.png"
-                  alt="Shubham Prakash — Software Engineer"
-                  width={280}
-                  height={280}
-                  className="object-cover w-full h-full"
-                  priority
-                />
+              {/* Subtle outer glow */}
+              <div className="absolute -inset-3 rounded-full bg-primary/20 blur-xl pointer-events-none" />
+
+              {/* Clean gradient ring */}
+              <div className="relative p-1 rounded-full bg-gradient-to-tr from-primary via-orange-400 to-primary shadow-xl">
+                <div className="relative rounded-full overflow-hidden w-[160px] h-[160px] sm:w-[220px] sm:h-[220px] lg:w-[270px] lg:h-[270px] bg-muted border-2 border-background">
+                  <Image
+                    src="/profile.png"
+                    alt="Shubham Prakash — Software Engineer"
+                    width={270}
+                    height={270}
+                    className="object-cover w-full h-full"
+                    priority
+                  />
+                </div>
               </div>
             </motion.div>
 
             {/* Architecture pipeline badge below profile */}
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-[10px] sm:text-[11px] font-mono px-3 sm:px-4 py-2 rounded-full bg-card/90 border border-primary/30 shadow-sm max-w-full">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-mono px-3.5 py-2 rounded-2xl sm:rounded-full bg-card/90 border border-primary/30 shadow-xs max-w-full text-center">
               <span className="text-primary font-semibold">React</span>
               <span className="text-muted-foreground/60">→</span>
               <span className="text-foreground">API Gateway</span>

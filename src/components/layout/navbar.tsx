@@ -8,7 +8,6 @@ import { navigationItems } from '@/data/site'
 import { ThemeToggle } from './theme-toggle'
 import { MobileNav } from './mobile-nav'
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
 
 export function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -42,18 +41,15 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="hidden lg:block">
-            <ThemeToggle />
-          </div>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="lg:hidden"
+          <ThemeToggle />
+          <button
+            type="button"
+            className="lg:hidden flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-secondary/60 hover:bg-secondary text-foreground hover:text-primary transition-all shadow-xs active:scale-95 cursor-pointer"
             onClick={() => setIsMobileNavOpen(true)}
             aria-label="Open menu"
           >
-            <Menu className="h-5 w-5" />
-          </Button>
+            <Menu className="h-5 w-5 stroke-[2.2]" />
+          </button>
         </div>
       </div>
 

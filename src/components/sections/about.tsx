@@ -29,7 +29,7 @@ export function About() {
             </FadeIn>
           </div>
           
-          <FadeIn delay={0.4} direction="left" className="w-full">
+          <FadeIn delay={0.4} direction="up" className="w-full">
             <div className="bg-card rounded-xl border border-border p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-6">Key Highlights</h3>
               <div className="space-y-4">

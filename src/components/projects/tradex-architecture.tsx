@@ -106,7 +106,7 @@ export function TradeXArchitectureDiagram() {
   return (
     <div className="space-y-6">
       {/* Interactive Diagram Flow */}
-      <div className="bg-card/50 border border-border/80 rounded-xl p-6 lg:p-8">
+      <div className="bg-card/50 border border-border/80 rounded-xl p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col items-center space-y-4">
           
           {/* Layer 1: Client */}
@@ -289,7 +289,7 @@ export function TradeXArchitectureDiagram() {
 
       {/* Selected Node Details Panel */}
       {activeNode && (
-        <Card className="p-6 border-primary/40 bg-card/80 transition-all duration-300">
+        <Card className="p-4 sm:p-6 border-primary/40 bg-card/80 transition-all duration-300">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-border/60">
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-primary font-semibold">

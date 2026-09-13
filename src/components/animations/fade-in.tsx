@@ -57,7 +57,7 @@ export function FadeIn({
       variants={variants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: true, margin: '-10px' }}
       className={className}
     >
       {children}
