@@ -43,7 +43,7 @@ export function About() {
                 </div>
                 <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Education</span>
-                  <span className="font-medium text-foreground">B.Tech, CUSAT (8.91/10)</span>
+                  <span className="font-medium text-foreground">B.Tech in ECE, SOE, CUSAT (8.91/10)</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:justify-between py-2">
                   <span className="text-muted-foreground">Focus</span>

@@ -44,17 +44,16 @@ export default function ResumePage() {
             </div>
             
             <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
-              Software Engineer with 3+ years of experience specializing in backend architecture, microservices, 
-              and distributed systems using Java and Spring Boot. Proficient in building modern full-stack web applications 
-              with React and Next.js. Proven track record of scaling enterprise systems, optimizing application performance, 
-              and leading technical migrations at Tata Consultancy Services.
+              Software Engineer with 3 years of experience building scalable applications using Java, Spring Boot, Spring Cloud, 
+              Microservices, React, and Node.js. Strong in System Design, DSA, REST APIs, distributed systems, authentication, 
+              and cloud-native development across Accenture, Tata Consultancy Services (TCS Digital), Sylvr, and IIT Patna.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link href="/experience">
                 <Card hover className="p-6 bg-background border-border/50 group">
                   <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">Professional Experience &rarr;</h3>
-                  <p className="text-sm text-muted-foreground mt-2">View detailed work history at TCS.</p>
+                  <p className="text-sm text-muted-foreground mt-2">View detailed work history across Accenture, TCS Digital, and more.</p>
                 </Card>
               </Link>
               
