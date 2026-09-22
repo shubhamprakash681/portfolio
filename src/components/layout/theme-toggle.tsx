@@ -1,42 +1,58 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { Sun, Moon, Monitor } from 'lucide-react'
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Sun, Moon, Monitor } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function ThemeToggle() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return <div className="w-10 h-10" />
+    return (
+      <div
+        className="h-8.5 w-23.5 rounded-lg border border-border bg-secondary/50 p-0.5 opacity-60"
+        aria-hidden="true"
+      />
+    );
   }
 
-  const cycleTheme = () => {
-    if (theme === 'light') setTheme('dark')
-    else if (theme === 'dark') setTheme('system')
-    else setTheme('light')
-  }
+  const themeOptions = [
+    { value: "light" as const, icon: Sun, label: "Light" },
+    { value: "dark" as const, icon: Moon, label: "Dark" },
+    { value: "system" as const, icon: Monitor, label: "System" },
+  ];
 
   return (
-    <button
-      type="button"
-      onClick={cycleTheme}
-      aria-label={`Toggle theme (current: ${theme})`}
-      className="flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-secondary/60 hover:bg-secondary text-foreground hover:text-primary transition-all shadow-xs active:scale-95 cursor-pointer"
-      title={`Theme: ${theme}`}
-    >
-      {theme === 'light' ? (
-        <Sun className="h-4 w-4 text-amber-500 transition-all" />
-      ) : theme === 'dark' ? (
-        <Moon className="h-4 w-4 text-blue-400 transition-all" />
-      ) : (
-        <Monitor className="h-4 w-4 text-primary transition-all" />
-      )}
-    </button>
-  )
+    <div className="flex items-center rounded-lg border border-border bg-secondary/60 p-0.5 gap-0.5 shadow-xs">
+      {themeOptions.map((opt) => {
+        const isSelected = theme === opt.value;
+        const Icon = opt.icon;
+
+        return (
+          <button
+            key={opt.value}
+            type="button"
+            onClick={() => setTheme(opt.value)}
+            className={cn(
+              "flex items-center justify-center rounded-md p-1.5 transition-all duration-200 cursor-pointer active:scale-95 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-1",
+              isSelected
+                ? "bg-primary text-primary-foreground shadow-xs shadow-primary/25 font-medium"
+                : "text-muted-foreground hover:bg-primary/10 hover:text-primary",
+            )}
+            title={opt.label}
+            aria-label={`Switch to ${opt.label} mode`}
+            aria-pressed={isSelected}
+          >
+            <Icon className="h-4 w-4" />
+          </button>
+        );
+      })}
+    </div>
+  );
 }
