@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="prose prose-invert max-w-none text-muted-foreground mt-6 space-y-4">
             <p>
               Hello! I&apos;m Shubham Prakash, a passionate Software Engineer based in Mumbai, India.
-              With 3 years of experience in the tech industry, I specialize in building robust,
+              With 3+ years of experience in the tech industry, I specialize in building robust,
               scalable backend architectures using Java, Spring Boot, Spring Cloud, and Microservices, while also
               crafting modern frontend experiences with React, TypeScript, and Next.js.
             </p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex justify-between py-1 border-b border-border/60">
                   <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium text-foreground">3 Years</span>
+                  <span className="font-medium text-foreground">3+ Years</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-border/60">
                   <span className="text-muted-foreground">Location</span>

@@ -141,7 +141,7 @@ Java, Spring Boot, Microservices, React, Distributed Systems and Cloud-Native De
 
 Experience:
 
-3 years
+3+ years
 
 Current company:
 
@@ -513,7 +513,7 @@ Create concise professional copy based on my resume.
 
 Mention:
 
-* 3 years experience
+* 3+ years experience
 * scalable applications
 * Java/Spring Boot
 * Microservices

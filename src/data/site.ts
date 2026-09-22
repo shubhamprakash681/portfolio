@@ -6,7 +6,7 @@ export const siteConfig = {
   name: 'Shubham Prakash',
   title: 'Shubham Prakash — Software Engineer',
   description:
-    'Software Engineer with 3 years of experience building scalable applications using Java, Spring Boot, Microservices, React, and distributed systems. Specializing in backend engineering, cloud-native development, and modern full-stack architecture.',
+    'Software Engineer with 3+ years of experience building scalable applications using Java, Spring Boot, Microservices, React, and distributed systems. Specializing in backend engineering, cloud-native development, and modern full-stack architecture.',
   url: siteUrl,
   email: 'shubhamprakash681@gmail.com',
   phone: '6299783192',

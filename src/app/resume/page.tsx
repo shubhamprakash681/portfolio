@@ -44,7 +44,7 @@ export default function ResumePage() {
             </div>
             
             <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
-              Software Engineer with 3 years of experience building scalable applications using Java, Spring Boot, Spring Cloud, 
+              Software Engineer with 3+ years of experience building scalable applications using Java, Spring Boot, Spring Cloud, 
               Microservices, React, and Node.js. Strong in System Design, DSA, REST APIs, distributed systems, authentication, 
               and cloud-native development across Accenture, Tata Consultancy Services (TCS Digital), Sylvr, and IIT Patna.
             </p>
