@@ -58,7 +58,7 @@ export const projects: Project[] = [
     swaggerUrl:
       'http://api.tradex.shubhamprakash681.in/swagger-ui/index.html',
     date: 'Jun 2026',
-    endDate: 'Present',
+    endDate: 'Sep 2026',
     featured: true,
   },
   {
