@@ -31,14 +31,19 @@ export default function AboutPage() {
           <div className="prose prose-invert max-w-none text-muted-foreground mt-6 space-y-4">
             <p>
               Hello! I&apos;m Shubham Prakash, a passionate Software Engineer based in Mumbai, India.
-              With 3+ years of experience in the tech industry, I specialize in building robust,
-              scalable backend architectures using Java, Spring Boot, Spring Cloud, and Microservices, while also
+              With 3.5+ years of experience in the tech industry, I specialize in building robust,
+              scalable enterprise applications using Java, Spring Boot, Spring Cloud, and Microservices, while also
               crafting modern frontend experiences with React, TypeScript, and Next.js.
             </p>
             <p>
-              Currently, I work as a Packaged App Development Analyst at Accenture. Previously at Tata Consultancy
-              Services (TCS Digital), I engineered enterprise applications, migrated authentication to JWT, OAuth2,
-              and Auth0 SSO across 3 enterprise applications, integrated Spring Cloud Eureka and Gateway for centralized routing,
+              Currently, I work as a Software Engineer (Packaged App Development Analyst) at Accenture. Here, I engineer
+              high-throughput backend microservices using Java, Spring Boot, and PostgreSQL for enterprise cash-logistics and
+              financial reconciliation workflows, processing 50,000+ daily asynchronous events via Apache Kafka, while building
+              operational portals with React and TypeScript and reducing p95 API latency by 65% with Redis caching.
+            </p>
+            <p>
+              Previously at Tata Consultancy Services (TCS Digital), I engineered enterprise applications, migrated authentication
+              to JWT, OAuth2, and Auth0 SSO across 3 enterprise applications, integrated Spring Cloud Eureka and Gateway for centralized routing,
               and optimized caching and session management to support 10,000+ concurrent users with up to 80% faster load times.
             </p>
             <p>
@@ -76,7 +81,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex justify-between py-1 border-b border-border/60">
                   <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium text-foreground">3+ Years</span>
+                  <span className="font-medium text-foreground">3.5+ Years</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-border/60">
                   <span className="text-muted-foreground">Location</span>

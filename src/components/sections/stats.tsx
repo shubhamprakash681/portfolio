@@ -3,7 +3,7 @@
 import { FadeIn } from '@/components/animations/fade-in'
 
 const statsData = [
-  { value: '3+', label: 'Years Experience' },
+  { value: '3.5+', label: 'Years Experience' },
   { value: '3', label: 'Companies Worked' },
   { value: '5+', label: 'Projects Built' },
   { value: '10K+', label: 'Concurrent Users Supported' },

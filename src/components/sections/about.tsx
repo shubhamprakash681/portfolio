@@ -19,7 +19,7 @@ export function About() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p>
-                At TCS Digital, I worked on enterprise applications supporting 10,000+ concurrent users, implementing JWT and OAuth2 authentication across multiple applications, and optimizing system performance to achieve up to 80% faster load times.
+                At Accenture and TCS Digital, I&apos;ve engineered high-throughput backend microservices processing 50,000+ daily events via Apache Kafka, supported 10,000+ concurrent users with sub-second response times, and implemented enterprise-grade OAuth2 and JWT authentication across distributed applications.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
@@ -39,7 +39,7 @@ export function About() {
                 </div>
                 <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium text-foreground">3+ Years</span>
+                  <span className="font-medium text-foreground">3.5+ Years</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Education</span>

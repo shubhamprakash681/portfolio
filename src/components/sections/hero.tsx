@@ -37,7 +37,7 @@ export function Hero() {
           
           <FadeIn delay={0.4} direction="up">
             <p className="text-muted-foreground mt-6 max-w-xl text-base sm:text-lg">
-              3+ years of experience designing and implementing scalable backend systems, distributed architectures, and modern full-stack applications for enterprise environments.
+              3.5+ years of experience designing and implementing scalable backend systems, distributed architectures, and modern full-stack applications for enterprise environments.
             </p>
           </FadeIn>
 
@@ -53,8 +53,8 @@ export function Hero() {
             <p className="mt-3 text-xs text-muted-foreground text-center lg:text-left">
               Looking for raw file?{' '}
               <a
-                href="/resume/ShubhamPrakash_Resume_Latest.pdf"
-                download="ShubhamPrakash_Resume_Latest.pdf"
+                href="/resume/ShubhamPrakash_Resume_Main.pdf"
+                download="ShubhamPrakash_Resume_Main.pdf"
                 className="text-primary hover:underline font-medium inline-flex items-center gap-1"
               >
                 Download direct PDF <Download className="w-3 h-3 inline" />

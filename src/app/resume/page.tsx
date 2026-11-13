@@ -22,7 +22,7 @@ export default function ResumePage() {
       
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 mt-8">
         <SectionHeading title="Resume" align="left" className="mb-0" />
-        <Button variant="primary" size="md" href="/resume/ShubhamPrakash_Resume_Latest.pdf" className="w-fit flex items-center gap-2" download>
+        <Button variant="primary" size="md" href="/resume/ShubhamPrakash_Resume_Main.pdf" className="w-fit flex items-center gap-2" download="ShubhamPrakash_Resume_Main.pdf">
           <Download className="w-4 h-4" /> Download PDF
         </Button>
       </div>
@@ -33,7 +33,7 @@ export default function ResumePage() {
             <h2 className="text-3xl font-bold text-foreground mb-4">Shubham Prakash</h2>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8 text-sm">
               <span className="flex items-center gap-1"><Code2 className="w-4 h-4" /> Software Engineer</span>
-              <span className="flex items-center gap-1"><Briefcase className="w-4 h-4" /> 3+ Years Experience</span>
+              <span className="flex items-center gap-1"><Briefcase className="w-4 h-4" /> 3.5+ Years Experience</span>
               <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Mumbai, India</span>
               <a href={`tel:+91${siteConfig.phone}`} className="flex items-center gap-1 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" /> +91 6299783192
@@ -44,8 +44,8 @@ export default function ResumePage() {
             </div>
             
             <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
-              Software Engineer with 3+ years of experience building scalable applications using Java, Spring Boot, Spring Cloud, 
-              Microservices, React, and Node.js. Strong in System Design, DSA, REST APIs, distributed systems, authentication, 
+              Software Engineer with 3.5+ years of experience building scalable enterprise applications using Java, Spring Boot, Spring Cloud, 
+              Microservices, React, TypeScript, and Node.js. Strong in System Design, DSA, REST APIs, distributed systems, authentication, 
               and cloud-native development across Accenture, Tata Consultancy Services (TCS Digital), Sylvr, and IIT Patna.
             </p>
 

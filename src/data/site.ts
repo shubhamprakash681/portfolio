@@ -6,7 +6,7 @@ export const siteConfig = {
   name: 'Shubham Prakash',
   title: 'Shubham Prakash — Software Engineer',
   description:
-    'Software Engineer with 3+ years of experience building scalable applications using Java, Spring Boot, Microservices, React, and distributed systems. Specializing in backend engineering, cloud-native development, and modern full-stack architecture.',
+    'Software Engineer with 3.5+ years of experience building scalable enterprise applications using Java, Spring Boot, Spring Cloud, Microservices, React, TypeScript, and Node.js. Specializing in backend engineering, cloud-native development, and modern full-stack architecture.',
   url: siteUrl,
   email: 'shubhamprakash681@gmail.com',
   phone: '6299783192',
@@ -15,10 +15,10 @@ export const siteConfig = {
   linkedin: 'https://linkedin.com/in/shubhamprakash681',
   jobTitle: 'Software Engineer',
   company: 'Accenture',
-  university: 'School of Engineering, Cochin University of Science and Technology',
+  university: 'School of Engineering, Cochin University of Science and Technology (CUSAT)',
   degree: 'B.Tech in Electronics and Communication Engineering',
   cgpa: '8.91/10',
-  yearsExperience: '3+',
+  yearsExperience: '3.5+',
   coffee: {
     enabled: true,
     upiId: process.env.NEXT_PUBLIC_COFFEE_UPI || '',
