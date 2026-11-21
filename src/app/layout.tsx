@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     'Microservices',
     'React Developer',
     'Full Stack Developer',
-    'Mumbai'
+    'Bangalore',
+    'Bengaluru'
   ],
   authors: [
     {

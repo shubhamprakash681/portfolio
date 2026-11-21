@@ -10,7 +10,7 @@ export const siteConfig = {
   url: siteUrl,
   email: 'shubhamprakash681@gmail.com',
   phone: '6299783192',
-  location: 'Mumbai, India',
+  location: 'Bangalore, India',
   github: 'https://github.com/shubhamprakash681',
   linkedin: 'https://linkedin.com/in/shubhamprakash681',
   jobTitle: 'Software Engineer',

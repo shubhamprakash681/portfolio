@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
   {
     company: 'Accenture',
     role: 'Software Engineer (Packaged App Development Analyst)',
-    location: 'Mumbai, India',
+    location: 'Bangalore, India',
     startDate: 'Apr 2026',
     endDate: 'Present',
     description: [

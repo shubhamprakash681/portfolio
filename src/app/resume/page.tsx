@@ -34,7 +34,7 @@ export default function ResumePage() {
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8 text-sm">
               <span className="flex items-center gap-1"><Code2 className="w-4 h-4" /> Software Engineer</span>
               <span className="flex items-center gap-1"><Briefcase className="w-4 h-4" /> 3.5+ Years Experience</span>
-              <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Mumbai, India</span>
+              <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Bangalore, India</span>
               <a href={`tel:+91${siteConfig.phone}`} className="flex items-center gap-1 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" /> +91 6299783192
               </a>

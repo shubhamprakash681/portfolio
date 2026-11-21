@@ -74,7 +74,7 @@ export function generatePersonJsonLd() {
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Mumbai',
+      addressLocality: 'Bangalore',
       addressCountry: 'IN',
     },
     knowsAbout: [

@@ -19,7 +19,7 @@ export function Hero() {
         <div className="flex-1 w-full lg:w-[60%] flex flex-col items-center lg:items-start text-center lg:text-left">
           <FadeIn delay={0.1} direction="up">
             <Badge variant="accent" className="mb-6">
-              Software Engineer • Mumbai, India
+              Software Engineer • Bangalore, India
             </Badge>
           </FadeIn>
           

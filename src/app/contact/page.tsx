@@ -87,7 +87,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Location</h3>
-              <p className="text-muted-foreground">Mumbai, India</p>
+              <p className="text-muted-foreground">Bangalore, India</p>
               <p className="text-xs text-muted-foreground mt-2">Open to remote worldwide</p>
             </div>
           </Card>
